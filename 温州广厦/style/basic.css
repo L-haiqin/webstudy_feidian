@@ -1,0 +1,84 @@
+/* header / nav / footer */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+}
+
+ul{
+    list-style-type: none; /*不显示列表样式*/
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 867px;
+    margin: 0 auto; /*居中*/
+    font-size: 12px;
+    background: darkslategray;
+}
+
+.header{
+    width: 867px;
+    height: 323px;
+}
+
+.header embed{
+    width: 867px;
+    height: 323px;
+}
+.nav {
+    height: 51px;
+    background: url("../images/linkbg.jpg");
+}
+
+.nav ul{
+    line-height: 51px; /*设置行高*/
+}
+
+.nav ul li{
+    /*display: inline-block; 与其他行内元素共享一行，不会独占一行. */
+    float: left; /*左浮动，使元素位于一行*/
+    text-align: center;
+    width: 124px;
+    background: url("../images/linkr.gif") no-repeat right center; /*使竖线不平铺，右边距中显示*/
+}
+
+.nav ul li:last-child{
+    width: 123px;
+    background: none; /*去掉最后一个元素右边的分隔符*/
+}
+
+.nav ul li a{
+    color: white;
+    display: inline-block;
+    width: 124px;
+    height: 51px;
+    /*text-decoration: none; 文字修饰，去掉下划线*/
+}
+
+.nav ul li a:hover{ /*点击链接时字体显示为黄色，并出现下划线*/
+    font-size: 14px;
+    font-weight: bold;
+    color: yellow;
+    text-decoration: underline;
+}
+
+
+.nav ul li a:last-child{
+    width: 123px;
+}
+
+.footer {
+    height: 110px;
+    background: url("../images/bg.gif");
+    clear: both; /*清除浮动*/
+}
+
+.footer p{
+    text-align: right;
+}

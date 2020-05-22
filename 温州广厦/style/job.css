@@ -1,0 +1,47 @@
+.sidebar{
+    width: 266px;
+    height: 750px;
+    background: white;
+    float: left;
+    border-right: 1px solid #666666;
+}
+
+.sidebar embed{
+    width: 220px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.content{
+    width: 600px;
+    height: 750px;
+    background: white;
+    float: left;
+    color: #666666;
+}
+
+.content h1 {
+    background: url("../images/job.gif") no-repeat;
+    width: 127px;
+    height: 26px;
+    color: #666666;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-indent: -9999px; /*隐藏字体*/
+}
+
+.content table{
+    margin-left: 30px;
+    line-height: 20px;
+    width: 80%;
+ }
+
+.content table td{
+    text-align: center;
+}
+
+.content p{
+    margin-left: 30px;
+    margin-top: 20px;
+    text-align: center;
+}

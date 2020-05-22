@@ -1,0 +1,58 @@
+.sidebar{
+    width: 266px;
+    height: 750px;
+    background: white;
+    float: left;
+    border-right: 1px solid #666666;
+}
+
+.sidebar embed{
+    width: 220px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.content{
+    width: 600px;
+    height: 750px;
+    background: white;
+    float: left;
+}
+
+.content h1 {
+    background: url("../images/lou.gif") no-repeat;
+    width: 127px;
+    height: 26px;
+    color: #666666;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-indent: -9999px; /*隐藏字体*/
+}
+
+.content dl{
+    width: 250px;
+    height: 200px;
+    background: white;
+    margin-left: 30px;
+    float: left;
+}
+
+.content dl dd{
+
+}
+
+.content dl dd img{
+    display: block;
+}
+
+.content dl dt{
+   text-align: center;
+    border-bottom: 1px solid orange;
+    color: #666666;
+}
+
+.content p{
+    clear: both;
+    text-align: center;
+    color: #666666;
+}
