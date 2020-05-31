@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 1190px;
+}
+
+a{
+    text-decoration: none;
+    color: #999999;
+}
+
+a:hover{
+    color: red;
+}
+
+img {
+    /* display: block; */
+    vertical-align: top; /* vertical-align用来设置行内元素对齐方式，解决图片底测有空白缝隙的问题 */
+}
+
+ul{
+    list-style: none; /*清除小圆点（列表样式）*/
+}
+
+.shortcut{
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+    font-size: 10px;
+}
+
+.shortcut .w{
+    height: 30px;
+    width: 1190px;
+    line-height: 30px;
+}
+
+.shortcut .w .fl{
+    float: left;
+    margin-left: 200px;
+}
+
+.shortcut .w .fr{
+    float: right;
+    width: 818.1px;
+}
+
+.shortcut .w .fr li{
+    float: left;
+    width: 72px;
+    border-right: #ffff00 1px;
+}
+
+.shortcut .w .fr li a:hover{/*点击链接时字体显示为红色*/
+    color: red;
+}
+
+.shortcut .w .fr .login{
+    width: 127px;
+    margin-right: 80px;
+}
+
+.middle{
+    height: 140px;
+    position: relative;/*相对定位*/
+    background-color: #fff;
+}
+
+.middle .logo{
+    position: absolute;
+    left: 100px;
+}
+
+.middle .search{
+    width: 550px;
+    height: 35px;
+    position: absolute;
+    top: 25px;
+    left: 320px;
+}
+
+.middle .search input{
+    width: 495px;
+    height: 30px;
+    border: 1px solid #f10215;
+    float: left;
+    font-size: 14px;
+    padding-left:3px;
+}
+
+.middle .search button{
+    width: 50px;
+    height: 35px;
+    background-color: #f10215;
+    border: red;
+    float: left;
+}
+
+.middle .search button i{
+    font-family: 'icomoon';
+    font-style: normal;
+    color: #fff;
+}
+
+.middle .shopCar{
+    width: 188px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 10px;
+    border: 1px solid gainsboro;
+    position: absolute;
+    top: 25px;
+    right: 95px;
+    background-color: #fff;
+    text-align: center;
+    color: #f10215;
+}
+
+.middle .shopCar i {
+    font-family: 'icomoon';
+    margin-right: 5px;
+    font-style: normal;
+}
+
+.middle .shopCar span {
+    width: 15px;
+    height: 15px;
+    background-color: #f10215;
+    border-radius: 50%;
+    position: absolute;  /* 加了绝对定位 固定定位 浮动的行内元素， 可以不用转换，直接给宽度和高度 */
+    top: 5px;
+    right: 30px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 15px;
+}
+
+.middle .hotWords{
+    font-size: 10px;
+    position: absolute;
+    top: 68px;
+    left: 320px;
+}
+
+.middle .nav{
+    font-size: 15px;
+    font-weight: bold;
+    top: 120px;
+    left: 200px;
+    position: absolute;
+}
+
+.middle .nav ul li{
+    float: left;
+    width: 70px;
+    color: black;
+}
+
+.middle .super{
+    position: absolute;
+    right: 70px;
+    top: 100px;
+}
+
+.grid{
+    height: 480px;
+    position: relative;/*相对定位*/
+    background-color: #fff;
+}
+
+.footer{
+    height: 480px;
+    background-color: #e3e4e5;
+}
+
+.footer .service{
+    padding: 30px 0;  /*设置内边距,上下内边距是10px，左右内边距是0*/
+    border-bottom: 1px solid #c0c0c0;
+    overflow: hidden;
+}
+
+.footer .service .w ul li{
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 43px;
+}
+
+.footer .service .w ul li h5{
+    position: absolute;
+    top: 0;
+    left: 38px;
+    width: 36px;
+    height: 43px;
+    background: url(../images/ico.png) no-repeat;
+    text-indent: -999em;
+}
+
+.footer .service .w ul li:nth-child(2) h5 {
+    background-position: 0 -43px;
+}
+
+.footer .service .w ul li:nth-child(3) h5 {
+    background-position: 0 -86px;
+}
+
+.footer .service .w ul li:nth-child(4) h5 {
+    background-position: bottom;
+}
+
+.footer .service .w ul li p {
+    font-weight: 700;
+    margin-left: 82px;
+    margin-top: 10px;
+}
+
+.footer .help{
+    padding: 30px 0;
+    border-bottom: 1px solid #c0c0c0;
+    overflow: hidden;
+    line-height: 20px;
+    color: #999999;
+}
+
+.footer .help .fl{
+    margin-left: 80px;
+}
+
+.footer .help .fl dl{
+    float: left;
+    width: 170px;
+}
+
+.footer .help .fl dl dt{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer .help .fl dl dd{
+    font-size: 10px;
+}
+
+.footer .help .fr{
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.footer .help .fr h5{
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer .help .fr p{
+    font-size: 10px;
+}
+
+.footer .help .fr a{
+    font-size: 10px;
+    text-align: left;
+}
+
+.footer .contact{
+    padding: 20px 50px;
+    font-size: 12px;
+    text-align: center;
+    color: #999999;
+    line-height: 20px;
+}
+
+.footer .contact .permit{
+    margin-top: 10px;
+}
+
+.footer .contact .foot-icon a {
+    display: inline-block;
+    width: 103px;
+    height: 33px;
+    background: url(../images/ico_footer.png) no-repeat 0 -150px;
+    margin: 20px 4px 0;
+    /* 行内块可以用 text-align: center 来实现居中 */
+}
+
+.footer .contact .foot-icon a:nth-child(2) {
+    background-position: -103px  -150px;
+}
+
+.footer .contact .foot-icon a:nth-child(3) {
+    background-position: 0  -183px;
+}
+
+.footer .contact .foot-icon a:nth-child(4) {
+     background-position: -103px  -183px;
+ }
+
+.footer .contact .foot-icon a:nth-child(5) {
+    background-position: 0  -216px;
+}

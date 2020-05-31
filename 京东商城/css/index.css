@@ -1,0 +1,51 @@
+.grid .left{
+    position: absolute;
+    width: 250px;
+}
+
+.grid .left .ad{
+    position: absolute;
+    margin-left: -170px;
+    background: url(../images/ad-r.jpg);
+    /* z这个盒子做动画，所以给它添加过渡 */
+    transition: all 0.8s;
+}
+
+.grid .left ul{
+    position: absolute;
+    height: 480px;
+    margin-left: 60px;
+    font-size: 13px;
+    background-color: gray;
+}
+
+.grid .left ul li{
+    line-height: 25px;
+    text-align: left;
+    left: 0;
+    color: white;
+}
+
+.grid .left ul li a{
+    color: white;
+}
+
+.grid .left ul li a:hover{
+    color: red;
+}
+
+.centre .col1{
+    margin-left: 220px;
+    position: absolute;
+}
+
+.centre .col2{
+    position: absolute;
+    left: 253px;
+    top:350px;
+}
+
+.centre .col2 .p2{
+    float: left;
+    position: absolute;
+}
