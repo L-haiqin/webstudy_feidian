@@ -1,0 +1,30 @@
+
+.recommend_song{
+    height: 532px;
+    background: dimgray;
+}
+
+.new_song{
+    height: 556px;
+    background: olive;
+}
+
+.focus{
+    height: 418px;
+    background: plum;
+}
+
+.new_album{
+    height: 857px;
+    background: blue;
+}
+
+.top_list{
+    height: 667.95px;
+    background: coral;
+}
+
+.mv{
+    height: 660.3px;
+    background: aqua;
+}

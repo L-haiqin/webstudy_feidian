@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none; /*消去下划线*/
+    color: black;
+}
+
+ul{
+    list-style-type: none;  /*消去列表前的小圆圈*/
+}
+
+body{
+    width: 1349px;
+    height: 4422.75px;
+    min-width: 1240px;
+    overflow-y: scroll; /* overflow 属性规定当内容溢出元素框时发生的事情,若值为scroll，内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容*/
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: poppin,Tahoma,Arial,微软雅黑,sans-serif;
+    color: #000000;
+}
+
+.header{
+    height: 142px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.header .section{
+    width: 1200px;
+    height: 142px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.header .section .pic{
+    top: 22px;
+    left: 0;
+    position: absolute;
+}
+
+.header .section .top_nav{
+    width: 453.1px;
+    height: 90px;
+    position: absolute;
+    left: 198px;
+    top: 0;
+}
+.header .section .top_nav ul li{
+    position: relative;
+    float: left;
+    margin-right: -5px; /*使每个li间距相等*/
+    text-align: center;
+}
+
+.header .section .top_nav ul li a{
+/*每一个元素都有默认的display属性值，比如div元素，它的默认display属性值为“block”，成为“块级”元素(block-level)；而span元素的默认display属性值为“inline”，称为“行内”元素。*/
+/*例子：链接 a 元素，在默认情况下是是“行内元素”，因此对a元素设置高度、宽度等属性，都是无效的。而比如div，p，li，img等默认情况下的display属性值就是“block”。所以对于链接a来说只能这样：display:block;强制将它改成块元素。*/
+/*常用的块状元素有： <div>、<p>、<h1>...<h6>、<ol>、<ul>、<dl>、<table>、<address>、<blockquote> （块引用）、<form>*/
+/*常用的内联元素有： <a>、<span>、<br>、<i>、<em>、<strong>、<label>、<q>、<var>、<cite>、<code>*/
+    display: block;
+    padding: 0 20px;
+    line-height: 90px;
+    height: 90px;
+    font-size: 18px;
+}
+
+/* a标签孩子问题；如何消除最后一个/第一个的样式？？？？？？？？？？？？？？？？？？？？？？？？*/
+.header .section .top_nav ul li a:hover{
+    color: #31c27c;
+}
+
+.header .section .top_nav ul .first a{
+    background-color: #31c27c;
+    color: white;
+}
+
+.header .section .top_nav ul .first a:hover{
+    color: white;
+}
+
+.header .section .top_subnav{
+    width: 1250px;
+    height: 51px;
+    line-height: 51px;
+    border-top: 1px solid #f2f2f2;
+    padding-left: 230px;
+    margin-right: -50px;
+}
+
+.header .section .top_subnav ul li{
+    float: left;
+    font-size: 15px;
+    margin-right: 47px;  /*使每个li间距相等*/
+}
+
+.header .section .top_subnav ul li a{
+    color: black;
+}
+.header .section .top_subnav ul li a:hover{
+    color: #31c27c;
+}
+
+.header .section .top_search{
+    width: 220px;
+    height: 64px;
+    top: 0;
+    right: 284px;
+    position: absolute;
+}
+
+.header .section .top_search input{
+    height: 36px;
+    width: 174px;
+    border: 1px solid #c9c9c9;  /* border占用了2px */
+    border-radius: 3px;  /* 给div元素添加圆角的边框*/
+    padding: 0 33px 0 11px;
+    font-size: 14px;
+    line-height: 36px;
+    margin-top: 26px;
+    background-color: #ffffff;
+    position: relative;
+    /*  transition: width .6s ease-out;  CSS的transition允许CSS的属性值在一定的时间区间内平滑地过渡，其属性值**属性**，**时间**，**速率**，**延迟** */
+}
+
+.header .section .top_search button{
+    position: absolute;
+    top: 27px;
+    right: 0;
+    width: 38px;
+    height: 35px;
+    background-color: white;
+    border: 0 none;
+    border-right: 1px solid #c9c9c9;
+    overflow: visible; /* visible:默认值。内容不会被修剪，会呈现在元素框之外。 */
+}
+
+.header .section .top_search button .icon_search{
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    margin-top: -8px;  /* 无用处 */
+    width: 16px;
+    height: 16px;
+    background-position: 0 -40px;  /* 无用处 */
+    background-image: url(../images/icon_sprite.png);
+}
+
+.header .section .top_search button span{
+    font: 0/0 a;
+}
+
+.header .login{
+    width: 264px;
+    height: 90px;
+    top: 0;
+    right: 0;
+    line-height: 90px;
+    position: absolute;
+}
+
+.header .login ul .login_button{
+    position: relative;
+    font-size: 16px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.header .login ul .login_button a:hover{
+    color: #31c27c;
+}
+
+.header .login ul .green{
+    width: 109px;
+    height: 36px;
+    margin-top: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    border: 1px solid #31c27c;
+    border-radius: 2px;
+    background-color: #31c27c;
+    float: left;
+}
+
+.header .login ul .green a{
+    width: 111px;
+    height: 38px;
+    display: block;
+    margin-top: -25px;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+.header .login ul .money{
+    width: 83px;
+    height: 36px;
+    font-size: 13px;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    float: left;
+    margin-top: 25px;
+}
+
+.header .login ul .money a{
+    display: block;
+    width: 85px;
+    height: 38px;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.footer{
+    height: 589.5px;
+    background-color: #333333;
+    color: #999999;
+    clear: both;
+}
+
+/* icon图标样式 start */
+.icon_pc, .icon_mac, .icon_android, .icon_iphone, .icon_kg, .icon_ss, .icon_qp{
+    display: block;
+    margin: 0 29px 12px;
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/footer.png");
+}
+
+.icon_pc{
+    width: 37px;
+    background-position: -2px 0;
+}
+
+.icon_mac{
+    width: 46px;
+    background-position: -92px 0;
+}
+
+.icon_android {
+    width: 37px;
+    background-position: -190px 0;
+}
+
+.icon_iphone {
+    width: 34px;
+    background-position: -279px 0;
+}
+
+.icon_kg {
+    width: 41px;
+    background-position: -370px 0;
+}
+
+.icon_ss {
+    width: 37px;
+    background-position: -463px 0;
+}
+
+.icon_qp {
+    margin-right: 23px;
+    width: 40px;
+    background-position: -563px 0;
+}
+/* icon图标样式 end */
+
+/*footer部分h3小标题*/
+.tit{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 80px 0 46px;
+}
+
+.footer .info{
+    width: 1200px;
+    height: 457.5px;
+    position: relative;
+    left: 80px;
+    /*padding-bottom: 45px;*/
+}
+
+.footer .info .download{
+    width: 357px;
+    height: 229.5px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.footer .info .download ul{
+    margin-left: -29px;
+}
+
+.footer .info .download ul li{
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.footer .info .download ul li a{
+    color: #999999;
+}
+
+.footer .info .download ul li a:hover{
+    color: #31c27c;
+}
+
+.footer .info .product{
+    position: absolute;
+    top: 0;
+    left: 476px;
+    width: 384px;
+}
+
+.footer .info .product ul{
+    margin-left: -25px;
+    position: relative;
+}
+
+.footer .info .product ul li{
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.pro{
+    clear: both;
+    margin-bottom: 18px;
+    text-indent: 25px;
+    margin-right: 5px;
+    top: 20px;
+}
+
+.pro1{
+    float: left;
+    margin-bottom: 18px;
+    text-indent: 25px;
+    margin-right: 5px;
+    top: 20px;
+}
+
+.footer .info .product ul li a{
+    color: #999999;
+}
+
+.footer .info .product ul li a:hover{
+    color: #31c27c;
+}
+
+.footer .info .cooperate{
+    float: right;
+    top: 0;
+    width: 300px;
+}
+
+.footer .info .cooperate ul{
+    position: relative;
+}
+
+.footer .info .cooperate ul li{
+    margin-bottom: 12px;
+    min-width: 100px;  /* 使其可以3*4分布的关键,cooperate总宽度为300 */
+    float: left;
+    text-align: left;
+}
+
+.footer .info .cooperate ul li a{
+    color: #999999;
+}
+
+.footer .info .cooperate ul li a:hover{
+    color: #31c27c;
+}
+
+.footer .info .platform{
+    width: 357px;
+    position: absolute;
+    top: 230px;
+    left: 10px;
+}
+
+.footer .info .platform ul li{
+    float: left;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.footer .info .platform ul li a{
+    color: #999999;
+}
+
+.footer .info .platform ul li a:hover{
+    color: #31c27c;
+}
+
+.footer .info .tme{
+    position: absolute;
+    top: 230px;
+    left: 476px;
+    width: 384px;
+}
+
+.footer .info .tme ul li a{
+    color: #999999;
+}
+
+.footer .info .tme ul li a:hover{
+    color: #31c27c;
+}
+
+.footer .about{
+    width: 1200px;
+    height: 132px;
+    padding: 24px 0;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.footer .about p a{
+    color: #999999;
+}
+
+.footer .about p a:hover{
+    color: #31c27c;
+}
