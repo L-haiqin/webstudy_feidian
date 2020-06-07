@@ -1,8 +1,213 @@
+.mod_bg{
+    background: url("../images/bg_detail.png") 50% 0 repeat-x;
+}
+
+img {
+    border: 0 none;
+    -ms-interpolation-mode: bicubic;
+    image-rendering: optimizeQuality;
+}
 
 .recommend_song{
     height: 532px;
-    background: dimgray;
+    position: relative;
 }
+
+.recommend_song .section{
+    width: 1200px;
+    height: 532px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;  /* 表示上下边界为0，左右则根据宽度自适应相同值（即居中） */
+}
+
+/*每个版块的头部标题公共样式 start*/
+.index_hd{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 24px;
+}
+
+.index_tit{
+    display: block;
+    margin: 0 auto;
+    width: 196px;
+    height: 40px;
+    background-image: url("../images/index_tit.png");
+}
+
+.icon_txt{
+    font:0/0 a;  /*图片按钮的文字隐藏*/
+
+    /*方法：*/
+    /*①text-indent: 100%; overflow:hidden;*/
+    /*②font: 0/0 a;  overflow:hidden;（字号大小0, 行高0，字体a是因为就一个字母，换成b也是OK的，实际并无a字体。）*/
+    /*③ .btn{ background:#f0f0f0 url(obtn.png); letter-spacing:-3em; overflow:hidden; text-align:left;}*/
+    /*.btn:first-letter{margin-left:-20em;}*/
+}
+
+.recommend_song .index_tit{
+    background-position: 0 0;
+}
+.new_song .index_tit{
+    background-position: 0 -50px;
+}
+.focus .index_tit{
+    background-position: 0 -100px;
+}
+.new_album .index_tit{
+    background-position: 0 -150px;
+}
+.top_list .index_tit{
+    background-position: 0 -200px;
+}
+.mv .index_tit{
+    background-position: 0 -250px;
+}
+/*每个版块的头部标题公共样式 end*/
+
+/*每个版块的切换栏公共样式 start*/
+.index_tab{
+    height: 50px;
+    text-align: center;
+}
+
+.index_tab a{
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 24px;
+    color: #333333;
+}
+
+.index_tab a:hover{
+    color: #31c27c;
+}
+/*每个版块的切换栏公共样式 end*/
+
+.recommend_song .playlist{
+    height: 310px;
+    margin-right: -20px;
+    margin-bottom: 20px;
+    overflow: hidden;  /* 隐藏功能*/
+}
+
+.recommend_song .playlist ul{
+    /*width: 1250%;  百分比值始终是以父容器的宽度为基准的*/
+    width: 1250%;
+    height: 310px;
+    position: relative;
+}
+
+.recommend_song .playlist ul li{
+    float: left;
+    position: relative;
+    width: 1.6%;
+    height: 310px;
+    padding-bottom: 0;
+    display: inline-block;
+    /*overflow: hidden;  hidden :内容会被修剪，并且其余内容是不可见的。*/
+    font-size: 14px;
+    vertical-align: top;  /*vertical-align 属性设置元素的垂直对齐方式。*/
+    /* top :把元素的顶端与行中最高元素的顶端对齐 */
+}
+
+.playlist_item_box{
+    position: absolute;
+    width: 224px;
+    height: 283px;
+}
+
+.playlist_cover{
+    height: 224px;
+}
+
+/*.playlist .playlist_pic{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*object-fit: cover;*/
+    /*transform: scale(1) translateZ(0);*/
+    /*transition: transform .75s;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+/*}*/
+
+.playlist_title .playlist_title_txt{
+    line-height: 44px;
+}
+
+.js_playlist:hover{
+    color: #31c27c;
+}
+
+.playlist_other{
+    color: #999999;
+}
+
+.rightBtn, .leftBtn{
+    top: 50%;
+    margin-top: -50px;
+    position: absolute;
+    width: 75px;
+    height: 100px;
+    /*transition: all .5s; 把鼠标指针放到 div 元素上，其宽度会从 100px 逐渐变为 300px：*/
+    transition-property: opacity,transform;
+    transition-duration: .5s;
+    text-align: center;
+    line-height: 120px;
+    color: #333333;
+    background: rgba(0,0,0,.05);
+    font-size: 30px;
+    cursor: pointer;  /* cursor 属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状 */
+    /*pointer 	光标呈现为指示链接的指针（一只手）*/
+}
+
+.rightBtn{
+    right: -75px;
+}
+.leftBtn{
+    left: -75px;
+}
+
+.rightBtn:hover{
+    right: 0;
+    background-color: #31c27c;
+}
+
+.leftBtn:hover{
+    left: 0;
+    background-color: #31c27c;
+}
+
+.recommend_song .section .switch{
+    height: 38px;
+    width: 56px;
+    margin: 0 auto;
+}
+
+.recommend_song .section .switch a{
+    display: block;
+    width: 28px;
+    height: 12px;
+    padding: 0 0 26px;
+    float: left;
+}
+
+.slide_switch_bg{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,.3);
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
 
 .new_song{
     height: 556px;

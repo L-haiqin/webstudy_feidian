@@ -7,9 +7,14 @@
     <meta name="description" content="QQ音乐是腾讯公司推出的一款网络音乐服务产品，海量音乐在线试听、新歌热歌在线首发、歌词翻译、手机铃声下载、高品质无损音乐试听、海量无损曲库、正版音乐下载、空间背景音乐设置、MV观看等，是互联网音乐播放和下载的优选。"/>
 
     <!--https://y.qq.com/favicon.ico可获得QQ音乐图标-->
+    <!--引入网页图标-->
     <link rel="shortcut icon" href="favicon.ico">
+
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <!--引入js文件-->
+    <script src="js/index.js"></script>
 </head>
 <body>
 <div class="header">
@@ -62,22 +67,364 @@
 </div>
 
 <!--歌单推荐-->
-<div class="recommend_song">歌单推荐</div>
+<div class="recommend_song mod_bg">
+    <div class="section">
+        <!--每个版块头部的公共部分-->
+        <div class="index_hd">
+            <h2 class="index_tit"><i class="icon_txt">歌单推荐</i></h2>
+        </div>
+
+        <!--没有用到ul列表-->
+        <div class="index_tab">
+            <a href="#" style="color: #31c27c">为你推荐</a>
+            <a href="#">轻音乐</a>
+            <a href="#">网络歌曲</a>
+            <a href="#">情歌</a>
+            <a href="#">官方歌单</a>
+            <a href="#">经典</a>
+        </div>
+
+        <div class="playlist">
+            <ul>
+                <li>
+                    <div class="playlist_item_box">
+                        <!--图片-->
+                        <div class="playlist_cover">
+                            <a href="https://y.qq.com/n/yqq/playsquare/7228622136.html#stat=y_new.index.playlist.pic">
+                                <img class="playlist_pic" src="images/recommendSong/1.jpg" style="width: 224px; height: 224px">
+                                <i class="cover_mask"></i>
+                                <i class="cover_icon_play"></i>
+                            </a>
+                        </div>
+                        <!--小标题-->
+                        <h4 class="playlist_title">
+                            <span class="playlist_title_txt">
+                                <a class="js_playlist" href="">孤独寂静的夜藏着一个人的独白</a>
+                            </span>
+                        </h4>
+                        <!--播放量-->
+                        <div class="playlist_other">
+                            播放量：112.7万
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="playlist_item_box">
+                        <!--图片-->
+                        <div class="playlist_cover">
+                            <a href="https://y.qq.com/n/yqq/playsquare/7228622136.html#stat=y_new.index.playlist.pic">
+                                <img src="images/recommendSong/2.jpg" style="width: 224px; height: 224px">
+                                <i class="cover_play"></i>
+                            </a>
+                        </div>
+                        <!--小标题-->
+                        <h4 class="playlist_title">
+                            <span class="playlist_title_txt">
+                                <a class="js_playlist" href="">100首催眠秘诀：流行歌曲钢琴版</a>
+                            </span>
+                        </h4>
+                        <!--播放量-->
+                        <div class="playlist_other">
+                            播放量：4822.2万
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="playlist_item_box">
+                        <!--图片-->
+                        <div class="playlist_cover">
+                            <a href="https://y.qq.com/n/yqq/playsquare/7228622136.html#stat=y_new.index.playlist.pic">
+                                <img src="images/recommendSong/3.jpg" style="width: 224px; height: 224px">
+                                <i class="cover_play"></i>
+                            </a>
+                        </div>
+                        <!--小标题-->
+                        <h4 class="playlist_title">
+                            <span class="playlist_title_txt">
+                                <a class="js_playlist" href="">待你长发及腰</a>
+                            </span>
+                        </h4>
+                        <!--播放量-->
+                        <div class="playlist_other">
+                            播放量：14.9万
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="playlist_item_box">
+                        <!--图片-->
+                        <div class="playlist_cover">
+                            <a href="https://y.qq.com/n/yqq/playsquare/7228622136.html#stat=y_new.index.playlist.pic">
+                                <img src="images/recommendSong/4.jpg" style="width: 224px; height: 224px">
+                                <i class="cover_play"></i>
+                            </a>
+                        </div>
+                        <!--小标题-->
+                        <h4 class="playlist_title">
+                            <span class="playlist_title_txt">
+                                <a class="js_playlist" href="">我喜欢一人享受孤独的陪伴</a>
+                            </span>
+                        </h4>
+                        <!--播放量-->
+                        <div class="playlist_other">
+                            播放量：1434.7万
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="playlist_item_box">
+                        <!--图片-->
+                        <div class="playlist_cover">
+                            <a href="https://y.qq.com/n/yqq/playsquare/7228622136.html#stat=y_new.index.playlist.pic">
+                                <img src="images/recommendSong/5.jpg" style="width: 224px; height: 224px">
+                                <i class="cover_play"></i>
+                            </a>
+                        </div>
+                        <!--小标题-->
+                        <h4 class="playlist_title">
+                            <span class="playlist_title_txt">
+                                <a class="js_playlist" href="">抖音最火国风歌：一世倾心为情长</a>
+                            </span>
+                        </h4>
+                        <!--播放量-->
+                        <div class="playlist_other">
+                            播放量：434.7万
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="playlist_item_box">
+                        <!--图片-->
+                        <div class="playlist_cover">
+                            <a href="https://y.qq.com/n/yqq/playsquare/7228622136.html#stat=y_new.index.playlist.pic">
+                                <img class="playlist_pic" src="images/recommendSong/1.jpg" style="width: 224px; height: 224px">
+                                <i class="cover_mask"></i>
+                                <i class="cover_icon_play"></i>
+                            </a>
+                        </div>
+                        <!--小标题-->
+                        <h4 class="playlist_title">
+                            <span class="playlist_title_txt">
+                                <a class="js_playlist" href="">孤独寂静的夜藏着一个人的独白</a>
+                            </span>
+                        </h4>
+                        <!--播放量-->
+                        <div class="playlist_other">
+                            播放量：112.7万
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="playlist_item_box">
+                        <!--图片-->
+                        <div class="playlist_cover">
+                            <a href="https://y.qq.com/n/yqq/playsquare/7228622136.html#stat=y_new.index.playlist.pic">
+                                <img src="images/recommendSong/2.jpg" style="width: 224px; height: 224px">
+                                <i class="cover_play"></i>
+                            </a>
+                        </div>
+                        <!--小标题-->
+                        <h4 class="playlist_title">
+                            <span class="playlist_title_txt">
+                                <a class="js_playlist" href="">100首催眠秘诀：流行歌曲钢琴版</a>
+                            </span>
+                        </h4>
+                        <!--播放量-->
+                        <div class="playlist_other">
+                            播放量：4822.2万
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="playlist_item_box">
+                        <!--图片-->
+                        <div class="playlist_cover">
+                            <a href="https://y.qq.com/n/yqq/playsquare/7228622136.html#stat=y_new.index.playlist.pic">
+                                <img src="images/recommendSong/3.jpg" style="width: 224px; height: 224px">
+                                <i class="cover_play"></i>
+                            </a>
+                        </div>
+                        <!--小标题-->
+                        <h4 class="playlist_title">
+                            <span class="playlist_title_txt">
+                                <a class="js_playlist" href="">待你长发及腰</a>
+                            </span>
+                        </h4>
+                        <!--播放量-->
+                        <div class="playlist_other">
+                            播放量：14.9万
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="playlist_item_box">
+                        <!--图片-->
+                        <div class="playlist_cover">
+                            <a href="https://y.qq.com/n/yqq/playsquare/7228622136.html#stat=y_new.index.playlist.pic">
+                                <img src="images/recommendSong/4.jpg" style="width: 224px; height: 224px">
+                                <i class="cover_play"></i>
+                            </a>
+                        </div>
+                        <!--小标题-->
+                        <h4 class="playlist_title">
+                            <span class="playlist_title_txt">
+                                <a class="js_playlist" href="">我喜欢一人享受孤独的陪伴</a>
+                            </span>
+                        </h4>
+                        <!--播放量-->
+                        <div class="playlist_other">
+                            播放量：1434.7万
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="playlist_item_box">
+                        <!--图片-->
+                        <div class="playlist_cover">
+                            <a href="https://y.qq.com/n/yqq/playsquare/7228622136.html#stat=y_new.index.playlist.pic">
+                                <img src="images/recommendSong/5.jpg" style="width: 224px; height: 224px">
+                                <i class="cover_play"></i>
+                            </a>
+                        </div>
+                        <!--小标题-->
+                        <h4 class="playlist_title">
+                            <span class="playlist_title_txt">
+                                <a class="js_playlist" href="">抖音最火国风歌：一世倾心为情长</a>
+                            </span>
+                        </h4>
+                        <!--播放量-->
+                        <div class="playlist_other">
+                            播放量：434.7万
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!--左右按钮-->
+            <div class="rightBtn">></div>
+            <div class="leftBtn"><</div>
+        </div>
+
+        <!--滚动小圆圈-->
+        <div class="switch">
+            <ul>
+                <li class="active">
+                    <a>
+                        <i class="slide_switch_bg"></i>
+                        <i class="icon_txt">1</i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="slide_switch_bg"></i>
+                        <i class="icon_txt">2</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="action"></div>
+</div>
 
 <!--新歌首发-->
-<div class="new_song">新歌首发</div>
+<div class="new_song mod_bg">
+    <div class="section">
+        <!--每个版块头部的公共部分-->
+        <div class="index_hd">
+            <h2 class="index_tit"><i class="icon_txt">新歌首发</i></h2>
+        </div>
+
+        <!--没有用到ul列表-->
+        <div class="index_tab">
+            <a href="#" style="color: #31c27c">最新</a>
+            <a href="#">内地</a>
+            <a href="#">港台</a>
+            <a href="#">欧美</a>
+            <a href="#">韩国</a>
+            <a href="#">日本</a>
+        </div>
+    </div>
+    <div class="action"></div>
+</div>
 
 <!--精彩推荐-->
-<div class="focus">精彩推荐</div>
+<div class="focus mod_bg">
+    <div class="section">
+        <!--每个版块头部的公共部分-->
+        <div class="index_hd">
+            <h2 class="index_tit"><i class="icon_txt">精彩推荐</i></h2>
+        </div>
+
+    </div>
+    <div class="action"></div>
+</div>
 
 <!--新碟首发-->
-<div class="new_album">新碟首发</div>
+<div class="new_album mod_bg">
+    <div class="section">
+        <!--每个版块头部的公共部分-->
+        <div class="index_hd">
+            <h2 class="index_tit"><i class="icon_txt">新碟首发</i></h2>
+        </div>
+
+        <!--没有用到ul列表-->
+        <div class="index_tab">
+            <a href="#" style="color: #31c27c">内地</a>
+            <a href="#">港台</a>
+            <a href="#">欧美</a>
+            <a href="#">韩国</a>
+            <a href="#">日本</a>
+            <a href="#">其他</a>
+            <a href="#">更多</a>
+        </div>
+
+    </div>
+    <div class="action"></div>
+</div>
 
 <!--排行榜-->
-<div class="top_list">排行榜</div>
+<div class="top_list mod_bg">
+    <div class="section">
+        <!--每个版块头部的公共部分-->
+        <div class="index_hd">
+            <h2 class="index_tit"><i class="icon_txt">排行榜</i></h2>
+        </div>
+
+    </div>
+    <div class="action"></div>
+</div>
 
 <!--MV-->
-<div class="mv">MV</div>
+<div class="mv mod_bg">
+    <div class="section">
+        <!--每个版块头部的公共部分-->
+        <div class="index_hd">
+            <h2 class="index_tit"><i class="icon_txt">MV</i></h2>
+        </div>
+
+        <!--没有用到ul列表-->
+        <div class="index_tab">
+            <a href="#" style="color: #31c27c">精选</a>
+            <a href="#">内地</a>
+            <a href="#">港台</a>
+            <a href="#">欧美</a>
+            <a href="#">韩国</a>
+            <a href="#">日本</a>
+        </div>
+
+    </div>
+    <div class="action"></div>
+</div>
 
 <div class="footer">
     <div class="info">
