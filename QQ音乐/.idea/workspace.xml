@@ -2,15 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b02d7e3-b7e1-4e29-b130-4653ed5004e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/bg_detail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cover_play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/index_tit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/recommendSong/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/recommendSong/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/recommendSong/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/recommendSong/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/recommendSong/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/album/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/album/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/album/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/album/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/album/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/album/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/album/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/album/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/album/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/album/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bg_index_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/focus/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/focus/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mv/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mv/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mv/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mv/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mv/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mv/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mv/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mv/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mv/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mv/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/newSong/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/newSong/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/newSong/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/newSong/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/newSong/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/newSong/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/newSong/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/newSong/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/newSong/9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -28,44 +51,46 @@
     <session id="-1675364620">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="6" />
+          <entry key="css" value="7" />
           <entry key="html" value="3" />
           <entry key="jpg" value="2" />
-          <entry key="js" value="2" />
-          <entry key="png" value="1" />
+          <entry key="js" value="4" />
+          <entry key="png" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="6" />
+          <entry key="CSS" value="7" />
           <entry key="HTML" value="3" />
-          <entry key="Image" value="3" />
-          <entry key="JavaScript" value="2" />
+          <entry key="Image" value="5" />
+          <entry key="JavaScript" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2942" />
-          <entry key="html" value="1888" />
+          <entry key="css" value="4386" />
+          <entry key="html" value="2874" />
           <entry key="js" value="157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2942" />
-          <entry key="HTML" value="1888" />
+          <entry key="CSS" value="4386" />
+          <entry key="HTML" value="2874" />
           <entry key="JavaScript" value="157" />
         </counts>
       </usages-collector>
@@ -76,9 +101,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-418">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="-224">
+              <caret line="742" column="23" lean-forward="true" selection-start-line="742" selection-start-column="23" selection-end-line="742" selection-end-column="23" />
               <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -86,8 +112,9 @@
                 <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -98,19 +125,26 @@
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#7;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#8;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#9;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
+            <state relative-caret-position="272">
+              <caret line="548" column="20" selection-start-line="548" selection-start-column="20" selection-end-line="548" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -119,7 +153,7 @@
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -127,17 +161,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/QQmusicweb/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="304" column="34" selection-start-line="304" selection-start-column="20" selection-end-line="304" selection-end-column="34" />
+            <state relative-caret-position="13015">
+              <caret line="685" selection-start-line="685" selection-end-line="685" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/QQmusicweb/scripts/scroll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/QQmusicweb/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="430" column="15" selection-start-line="430" selection-start-column="15" selection-end-line="430" selection-end-column="15" />
+            <state relative-caret-position="6745">
+              <caret line="355" column="23" selection-start-line="355" selection-start-column="23" selection-end-line="355" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -160,8 +203,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/base.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/index.css" />
       </list>
     </option>
@@ -172,11 +215,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="262" />
-    <option name="y" value="84" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="232" />
+    <option name="y" value="65" />
     <option name="width" value="841" />
-    <option name="height" value="561" />
+    <option name="height" value="614" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -190,6 +233,17 @@
             <path>
               <item name="QQ音乐" type="b2602c69:ProjectViewProjectNode" />
               <item name="QQ音乐" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QQ音乐" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QQ音乐" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QQ音乐" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QQ音乐" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="mv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -207,8 +261,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\git_webstudy\QQ音乐\images\recommendSong" />
+      <recent name="D:\git_webstudy\QQ音乐\images\mv" />
       <recent name="D:\git_webstudy\QQ音乐\images" />
+      <recent name="D:\git_webstudy\QQ音乐\images\album" />
+      <recent name="D:\git_webstudy\QQ音乐\images\focus" />
+      <recent name="D:\git_webstudy\QQ音乐\images\newSong" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\git_webstudy\QQ音乐\images\recommendSong" />
@@ -242,15 +299,17 @@
       <workItem from="1591322718314" duration="11002000" />
       <workItem from="1591423825255" duration="10503000" />
       <workItem from="1591523207171" duration="1791000" />
+      <workItem from="1591800135185" duration="666000" />
+      <workItem from="1591830990746" duration="11934000" />
+      <workItem from="1592096257910" duration="15773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51630000" />
+    <option name="totallyTimeSpent" value="80003000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="262" y="84" width="841" height="561" extended-state="1" />
-    <editor active="true" />
+    <frame x="232" y="65" width="841" height="614" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.249066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -281,26 +340,59 @@
     <entry file="file://$PROJECT_DIR$/images/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/recommendSong/3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/QQmusicweb/scripts/tab.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
+        <state relative-caret-position="7087">
           <caret line="427" selection-start-line="427" selection-end-line="427" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/recommendSong/3.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/QQmusicweb/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13015">
+          <caret line="685" selection-start-line="685" selection-end-line="685" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/QQmusicweb/scripts/scroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3011" />
+        <state relative-caret-position="247">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
       </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/QQmusicweb/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6745">
+          <caret line="355" column="23" selection-start-line="355" selection-start-column="23" selection-end-line="355" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/mv/7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/mv/8.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-418">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="-224">
+          <caret line="742" column="23" lean-forward="true" selection-start-line="742" selection-start-column="23" selection-end-line="742" selection-end-column="23" />
           <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -308,8 +400,9 @@
             <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -320,38 +413,24 @@
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#7;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#8;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#9;n#ul#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/QQmusicweb/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="304" column="34" selection-start-line="304" selection-start-column="20" selection-end-line="304" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/QQmusicweb/style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="430" column="15" selection-start-line="430" selection-start-column="15" selection-end-line="430" selection-end-column="15" />
+        <state relative-caret-position="272">
+          <caret line="548" column="20" selection-start-line="548" selection-start-column="20" selection-end-line="548" selection-end-column="20" />
         </state>
       </provider>
     </entry>

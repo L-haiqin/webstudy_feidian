@@ -134,6 +134,7 @@ img {
 
 .playlist_title .playlist_title_txt{
     line-height: 44px;
+    font-weight: 400;
 }
 
 .js_playlist:hover{
@@ -144,48 +145,14 @@ img {
     color: #999999;
 }
 
-.rightBtn, .leftBtn{
-    top: 50%;
-    margin-top: -50px;
-    position: absolute;
-    width: 75px;
-    height: 100px;
-    /*transition: all .5s; 把鼠标指针放到 div 元素上，其宽度会从 100px 逐渐变为 300px：*/
-    transition-property: opacity,transform;
-    transition-duration: .5s;
-    text-align: center;
-    line-height: 120px;
-    color: #333333;
-    background: rgba(0,0,0,.05);
-    font-size: 30px;
-    cursor: pointer;  /* cursor 属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状 */
-    /*pointer 	光标呈现为指示链接的指针（一只手）*/
-}
-
-.rightBtn{
-    right: -75px;
-}
-.leftBtn{
-    left: -75px;
-}
-
-.rightBtn:hover{
-    right: 0;
-    background-color: #31c27c;
-}
-
-.leftBtn:hover{
-    left: 0;
-    background-color: #31c27c;
-}
-
-.recommend_song .section .switch{
+/*滚动小圆圈 start*/
+.switch{
     height: 38px;
     width: 56px;
     margin: 0 auto;
 }
 
-.recommend_song .section .switch a{
+.switch a{
     display: block;
     width: 28px;
     height: 12px;
@@ -201,35 +168,406 @@ img {
     background-color: rgba(0,0,0,.3);
     margin: 0 auto;
 }
+/*滚动小圆圈 end*/
 
+/*.rightBtn, .leftBtn{*/
+    /*top: 50%;*/
+    /*margin-top: -50px;*/
+    /*!*position: absolute;*!*/
+    /*float: left;*/
+    /*width: 75px;*/
+    /*height: 100px;*/
+    /*!*transition: all .5s; 把鼠标指针放到 div 元素上，其宽度会从 100px 逐渐变为 300px：*!*/
+    /*!*transition-property: opacity,transform;*!*/
+    /*!*transition-duration: .5s;*!*/
+    /*text-align: center;*/
+    /*line-height: 120px;*/
+    /*color: #333333;*/
+    /*!*background: rgba(0,0,0,.05);*!*/
+    /*font-size: 30px;*/
+    /*!*cursor: pointer;  !* cursor 属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状 *!*!*/
+    /*!*pointer 	光标呈现为指示链接的指针（一只手）*!*/
+/*}*/
 
+/*.rightBtn{*/
+    /*right: -75px;*/
+/*}*/
+/*.leftBtn{*/
+    /*left: -75px;*/
+/*}*/
 
-
-
-
-
-
-.new_song{
-    height: 556px;
-    background: olive;
+/*左右按钮   根据QQ音乐官方网站*/
+.action{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
 }
 
+.action .leftBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.action .rightBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.action .leftBtn a{
+    transform: translateX(-100%);
+    left: 0;
+}
+
+.action .rightBtn a{
+    transform: translateX(100%); /* 把元素沿着横向（x轴）移动自身宽度的100% */
+    right: 0;
+}
+
+.action .btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -8%;
+    width: 79px;
+    height: 108px;
+    background: rgba(0,0,0,.05);
+    opacity: 0;
+
+    /*css动画*/
+    transition-property: all;
+    /*transition-property: none| all | property ;  all表示所有属性都有过渡效果，property定义应用过渡效果的 CSS 属性名称列表，列表以逗号分隔*/
+    transition-duration: .5s;  /* 动画持续时间 */
+}
+
+/*无效？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？*/
+/*.slide_action__arrow{*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*margin-top: -20px;*/
+    /*width: 20px;*/
+    /*height: 39px;*/
+    /*background-image: url("../images/icon_sprite.png");*/
+/*}*/
+
+.act_left{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 20px;
+    height: 39px;
+    background-image: url("../images/icon_sprite.png");
+
+    left: 29px;
+    background-position: -20px -120px;
+}
+
+.act_right{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 20px;
+    height: 39px;
+    background-image: url("../images/icon_sprite.png");
+
+    right: 29px;
+    background-position: 0 -120px;
+}
+
+.recommend_song:hover #btn{
+    color: #31c27c;
+}
+
+.rightBtn:hover{
+    right: 0;
+    background-color: #31c27c;
+}
+/*？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？*/
+
+/*.leftBtn:hover{*/
+    /*left: 0;*/
+    /*background-color: #31c27c;*/
+/*}*/
+
+
+
+
+/*新歌首发*/
+.new_song{
+    height: 556px;
+    background: url("../images/bg_detail.png") 50% 0 repeat-x;
+}
+
+.new_song .new_song_list{
+    width: 1230px;
+    height: 333px;
+    margin: 0 auto;
+}
+
+.new_song .new_song_list .new_list ul li{
+    width: 409.983px;
+    height: 111px;
+    float: left;
+    border-bottom: 1px #c9c9c9;
+}
+
+.new_song .new_song_list .new_list ul li .song_info{
+    width: 189.983px;
+    margin-left: 110px;
+    margin-top: -70px;
+}
+
+.new_song .new_song_list .new_list ul li .song_info h3{
+    font-size: 14px;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+
+.new_song .new_song_list .new_list ul li .song_info p a{
+    color: #999999;
+}
+
+.new_song .new_song_list .new_list ul li .song_info a:hover{
+    color: #31c27c;
+}
+.new_song .new_song_list .new_list ul li .song_time{
+    float: right;
+    font-size: 15px;
+    margin-right: 25px;
+    margin-top: -33px;
+    color: #999999;
+}
+
+/*精彩推荐*/
 .focus{
     height: 418px;
-    background: plum;
+    background: url("../images/bg_detail.png") 50% 0 repeat-x;
+}
+
+.focus .section .focus_list{
+    width: 1220px;
+    height: 246px;
+    margin: 0 auto;
+}
+
+.focus .section .focus_list ul{
+    position: relative;
+    font-size: 0;
+    width: 1250%;
+}
+
+.focus .section .focus_list ul li{
+    float: left;
+    width: 610px;
+    height: 236px;
+    padding-right: 20px;
+}
+
+.focus .section .focus_list ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 40%;
+}
+
+.focus .section .focus_list ul li a img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .new_album{
-    height: 857px;
-    background: blue;
+    height: 775px;
+    background: url("../images/bg_detail.png") 50% 0 repeat-x;
 }
 
+.new_album .section .album_list{
+    width: 1220px;
+    height: 616px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.new_album .section .album_list ul li{
+    width: 244px;
+    height: 308px;
+    float: left;
+}
+.new_album .section .album_list ul li  a img{
+    width: 224px;
+    height: 224px;
+}
+
+.new_album .section .album_list ul li .song_info{
+    margin-top: 15px;
+}
+
+.new_album .section .album_list ul li .song_info h3{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.new_album .section .album_list ul li .song_info p a{
+    color: #999999;
+}
+
+.new_album .section .album_list ul li .song_info h3 a:hover{
+    color: #31c27c;
+}
+
+.new_album .section .album_list ul li .song_info p a:hover{
+    color: #31c27c;
+}
+
+/*排行榜*/
 .top_list{
     height: 667.95px;
-    background: coral;
+    background: url("../images/bg_detail.png") 50% 0 repeat-x;
+}
+
+.top_list .section .top{
+    width: 1220px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.top_list .section .top ul .top_module{
+    width: 224px;
+    height: 500px;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+}
+
+.top_list .section .top ul li .top_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*height: 567px;*/
+    height: 500px;
+    background-image: url("../images/bg_index_top.png");
+}
+
+.top_list .section .top ul .top_module .top_line{
+    position: absolute;
+    left: 50%;
+    top: 148px;
+    margin-left: -18px;
+    width: 36px;
+    height: 2px;
+    background: #fff;
+}
+
+.top_list .section .top ul li .top_hd{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    text-align: center;
+}
+
+.top_list .section .top ul li .top_hd p{
+    color: white;
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.top_list .section .top ul li .top_hd a{
+    color: white;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.top .top_song_list{
+    width: 164px;
+    height: 222px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 188px;
+    left: 30px;
+    right: 30px;
+}
+
+.top .top_song_list li{
+    margin-bottom: 23px;
+}
+
+.top .top_song_list li .number{
+    position: absolute;
+    display: inline;
+}
+
+.top .top_song_list li .name{
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.top .top_song_list li .singer{
+    margin-left: 15px;
+}
+
+.top .top_song_list li .name a{
+    color: white;
+}
+
+.top .top_song_list li .singer a{
+    color: white;
 }
 
 .mv{
     height: 660.3px;
-    background: aqua;
+    background: url("../images/bg_detail.png") 50% 0 repeat-x;
+}
+
+.mv_list{
+    height: 463.3px;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.mv_list ul li{
+    width: 244px;
+    height: 231.65px;
+    float: left;
+}
+
+.mv_list ul li img{
+    height: 126.65px;
+    width: 225.15px;
+}
+
+.mv_list .mv_info h3{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.mv_list .mv_info p a{
+    margin-top: 7px;
+    color: #999999;
+}
+
+.mv_list .mv_info h3 a:hover{
+    color: #31c27c;
+}
+.mv_list .mv_info p a:hover{
+    color: #31c27c;
+}
+
+.mv_list .mv_info span{
+    margin-top: 7px;
+    color: #999999;
 }
