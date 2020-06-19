@@ -6,6 +6,9 @@
 a{
     text-decoration: none; /*消去下划线*/
     color: black;
+    cursor: pointer;
+    /* cursor 属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状 */
+    /*pointer 	 光标呈现为指示链接的指针（一只手）*/
 }
 
 ul{
@@ -14,9 +17,9 @@ ul{
 
 body{
     width: 1349px;
-    height: 4422.75px;
+    height: 4378.75px;
     min-width: 1240px;
-    overflow-y: scroll; /* overflow 属性规定当内容溢出元素框时发生的事情,若值为scroll，内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容*/
+    /* overflow-y: scroll;  overflow 属性规定当内容溢出元素框时发生的事情,若值为scroll，内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容*/
     line-height: 1.5;
     font-size: 14px;
     font-family: poppin,Tahoma,Arial,微软雅黑,sans-serif;
@@ -416,7 +419,8 @@ body{
 .footer .about{
     width: 1200px;
     height: 132px;
-    padding: 24px 0;
+    position: relative;
+    left: 80px;
     font-size: 12px;
     line-height: 28px;
     text-align: center;

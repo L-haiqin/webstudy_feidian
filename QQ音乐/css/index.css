@@ -1,6 +1,6 @@
-.mod_bg{
-    background: url("../images/bg_detail.png") 50% 0 repeat-x;
-}
+/*.mod_bg{*/
+    /*background: url("../images/bg_detail.png") 50% 0 repeat-x;*/
+/*}*/
 
 img {
     border: 0 none;
@@ -11,13 +11,14 @@ img {
 .recommend_song{
     height: 532px;
     position: relative;
+    background: url("../images/bg_detail.png") 50% 0 repeat-x;
 }
 
 .recommend_song .section{
     width: 1200px;
     height: 532px;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 0 auto;  /* 表示上下边界为0，左右则根据宽度自适应相同值（即居中） */
 }
 
@@ -88,7 +89,7 @@ img {
     height: 310px;
     margin-right: -20px;
     margin-bottom: 20px;
-    overflow: hidden;  /* 隐藏功能*/
+     overflow: hidden;  /*隐藏功能; 此处隐藏 歌单推荐轮播图 所需图片 */
 }
 
 .recommend_song .playlist ul{
@@ -119,18 +120,17 @@ img {
 
 .playlist_cover{
     height: 224px;
+    width: 224px;
+    overflow: hidden; /* 隐藏超出边框的部分 */
 }
 
-/*.playlist .playlist_pic{*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*object-fit: cover;*/
-    /*transform: scale(1) translateZ(0);*/
-    /*transition: transform .75s;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-/*}*/
+.playlist_cover a img{
+    transition: all .3s;
+}
+
+.playlist_cover a img:hover{
+    transform: scale(1.2); /* 鼠标移入的时候变大一点点，超出边框的部分隐藏掉 */
+}
 
 .playlist_title .playlist_title_txt{
     line-height: 44px;
@@ -148,154 +148,117 @@ img {
 /*滚动小圆圈 start*/
 .switch{
     height: 38px;
-    width: 56px;
-    margin: 0 auto;
+    width: 1200px;
 }
 
-.switch a{
-    display: block;
-    width: 28px;
+.switch ul{
     height: 12px;
-    padding: 0 0 26px;
-    float: left;
+    width: auto;
+    display: inline-block;
+    position: absolute;  /* 实现轮播图的动画移动需要添加定位 */
+    left: 600px;
 }
 
-.slide_switch_bg{
-    display: block;
+.switch ul li{
     width: 8px;
     height: 8px;
     border-radius: 12px;
-    background-color: rgba(0,0,0,.3);
-    margin: 0 auto;
+    background-color: #c9c9c9;
+    /*margin: 0 auto;*/
+    float: left;
+    margin-right: 20px;
+    text-align: center;
 }
-/*滚动小圆圈 end*/
+.switch ul .current{
+    background-color: #999999;
+}
 
-/*.rightBtn, .leftBtn{*/
-    /*top: 50%;*/
-    /*margin-top: -50px;*/
-    /*!*position: absolute;*!*/
-    /*float: left;*/
-    /*width: 75px;*/
-    /*height: 100px;*/
-    /*!*transition: all .5s; 把鼠标指针放到 div 元素上，其宽度会从 100px 逐渐变为 300px：*!*/
-    /*!*transition-property: opacity,transform;*!*/
-    /*!*transition-duration: .5s;*!*/
-    /*text-align: center;*/
-    /*line-height: 120px;*/
-    /*color: #333333;*/
-    /*!*background: rgba(0,0,0,.05);*!*/
-    /*font-size: 30px;*/
-    /*!*cursor: pointer;  !* cursor 属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状 *!*!*/
-    /*!*pointer 	光标呈现为指示链接的指针（一只手）*!*/
-/*}*/
-
-/*.rightBtn{*/
-    /*right: -75px;*/
-/*}*/
-/*.leftBtn{*/
-    /*left: -75px;*/
-/*}*/
-
-/*左右按钮   根据QQ音乐官方网站*/
-.action{
+.rightBtn, .leftBtn{
+    display: none;    /*不显示左右按钮 */
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*overflow: hidden;*/
-}
-
-.action .leftBtn{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-}
-
-.action .rightBtn{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-}
-
-.action .leftBtn a{
-    transform: translateX(-100%);
-    left: 0;
-}
-
-.action .rightBtn a{
-    transform: translateX(100%); /* 把元素沿着横向（x轴）移动自身宽度的100% */
-    right: 0;
-}
-
-.action .btn{
-    position: absolute;
-    top: 50%;
-    margin-top: -8%;
-    width: 79px;
+    top: 220px;
+    float: left;
+    width: 75px;
     height: 108px;
+    /*transition: all .5s; 把鼠标指针放到 div 元素上，其宽度会从 100px 逐渐变为 300px：*/
+    transition-duration: .5s;
+    text-align: center;
+    line-height: 120px;
+    color: #333333;
     background: rgba(0,0,0,.05);
-    opacity: 0;
-
-    /*css动画*/
-    transition-property: all;
-    /*transition-property: none| all | property ;  all表示所有属性都有过渡效果，property定义应用过渡效果的 CSS 属性名称列表，列表以逗号分隔*/
-    transition-duration: .5s;  /* 动画持续时间 */
+    font-size: 30px;
+    cursor: pointer;
+    /* cursor 属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状 */
+    /*pointer 	 光标呈现为指示链接的指针（一只手）*/
 }
 
-/*无效？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？*/
-/*.slide_action__arrow{*/
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*margin-top: -20px;*/
-    /*width: 20px;*/
-    /*height: 39px;*/
-    /*background-image: url("../images/icon_sprite.png");*/
-/*}*/
+.rightBtn{
+    right: -75px;
+}
+.leftBtn{
+    left: -75px;
+}
 
-.act_left{
+/*滚动小圆圈 start*/
+.switchB{
+    height: 38px;
+}
+
+.switchB ul{
+    height: 12px;
+    display: inline-block;
+    position: absolute;  /* 实现轮播图的动画移动需要添加定位 */
+    left: 630px;
+}
+
+.switchB ul li{
+    width: 8px;
+    height: 8px;
+    margin-top: 20px;
+    border-radius: 12px;
+    background-color: #c9c9c9;
+    /*margin: 0 auto;*/
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+}
+.switchB ul .current{
+    background-color: #999999;
+}
+
+.rightBtnB, .leftBtnB{
+    display: none;   /* 不显示左右按钮 */
     position: absolute;
-    top: 50%;
-    margin-top: -20px;
-    width: 20px;
-    height: 39px;
-    background-image: url("../images/icon_sprite.png");
-
-    left: 29px;
-    background-position: -20px -120px;
+    float: left;
+    width: 75px;
+    height: 108px;
+    /*transition: all .5s; 把鼠标指针放到 div 元素上，其宽度会从 100px 逐渐变为 300px：*/
+    text-align: center;
+    line-height: 100px;
+    color: #333333;
+    background: rgba(0,0,0,.05);
+    font-size: 30px;
+    cursor: pointer;
+    /* cursor 属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状 */
+    /*pointer 	 光标呈现为指示链接的指针（一只手）*/
 }
 
-.act_right{
-    position: absolute;
-    top: 50%;
-    margin-top: -20px;
-    width: 20px;
-    height: 39px;
-    background-image: url("../images/icon_sprite.png");
-
-    right: 29px;
-    background-position: 0 -120px;
-}
-
-.recommend_song:hover #btn{
-    color: #31c27c;
-}
-
-.rightBtn:hover{
+.rightBtnB{
     right: 0;
-    background-color: #31c27c;
 }
-/*？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？*/
+.leftBtnB{
+    left: 0;
+}
 
-/*.leftBtn:hover{*/
-    /*left: 0;*/
+/*.recommend_song:hover #rightBtn{*/
+    /*right: 0;*/
     /*background-color: #31c27c;*/
 /*}*/
 
+/*.recommend_song:hover #leftBtn{*/
+    /*left: 0;*/
+    /*background-color: #31c27c;*/
+/*}*/
 
 
 
@@ -316,6 +279,47 @@ img {
     height: 111px;
     float: left;
     border-bottom: 1px #c9c9c9;
+}
+
+.new_song .new_song_list .new_list ul li .pic{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+}
+
+.new_song .new_song_list .new_list ul li a img{
+    transition: all .3s;  /* 过渡效果 */
+}
+
+.new_song .new_song_list .new_list ul li a img:hover{
+    transform: scale(1.1); /* 鼠标移入的时候变大一点点，超出边框的部分隐藏掉 */
+    /*transform： 应用于元素的2D或3D转换。 旋转：rotate（）、缩放：scale（）、移动：translate（）、倾斜：skew（）*/
+    /*animate：动画效果。*/
+}
+
+.new_song .new_song_list .new_list ul li .pic .cover_mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;  /* .pic要position定位 */
+    top: 0;
+    left: 0;
+    transition: all .5s;
+}
+
+.new_song .new_song_list .new_list ul li .pic .cover_icon_play{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* 居中 */
+    margin: -35px;
+
+    background: url(../images/cover_play.png);
+    opacity: 0; /* 设置 div 元素的不透明级别, 从 0.0 （完全透明）到 1.0（完全不透明）。 */
+    transform: scale(.7);
+    transition: all .7s;
 }
 
 .new_song .new_song_list .new_list ul li .song_info{
@@ -352,9 +356,10 @@ img {
 }
 
 .focus .section .focus_list{
+    overflow: hidden;
     width: 1220px;
     height: 246px;
-    margin: 0 auto;
+    margin:  0 auto;
 }
 
 .focus .section .focus_list ul{
@@ -365,7 +370,7 @@ img {
 
 .focus .section .focus_list ul li{
     float: left;
-    width: 610px;
+    width: 590px;
     height: 236px;
     padding-right: 20px;
 }
@@ -381,12 +386,12 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 590px;
+    height: 236px;
 }
 
 .new_album{
-    height: 775px;
+    height: 813px;
     background: url("../images/bg_detail.png") 50% 0 repeat-x;
 }
 
@@ -402,9 +407,24 @@ img {
     height: 308px;
     float: left;
 }
-.new_album .section .album_list ul li  a img{
+
+.new_album .section .album_list ul li .pic{
+    display: inline-block;
     width: 224px;
     height: 224px;
+    overflow: hidden;
+}
+
+.new_album .section .album_list ul li  a img{
+    transition: all .3s;  /* 过渡效果 */
+    width: 224px;
+    height: 224px;
+}
+
+.new_album .section .album_list ul li a img:hover{
+    transform: scale(1.1); /* 鼠标移入的时候变大一点点，超出边框的部分隐藏掉 */
+    /*transform： 应用于元素的2D或3D转换。 旋转：rotate（）、缩放：scale（）、移动：translate（）、倾斜：skew（）*/
+    /*animate：动画效果。*/
 }
 
 .new_album .section .album_list ul li .song_info{
@@ -446,6 +466,7 @@ img {
     float: left;
     position: relative;
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .top_list .section .top ul li .top_bg{
@@ -455,7 +476,13 @@ img {
     right: 0;
     /*height: 567px;*/
     height: 500px;
+    width: 224px;
+    transition: all .75s;
     background-image: url("../images/bg_index_top.png");
+}
+
+.top_list .section .top ul li:hover  .top_bg{
+    transform: scale(1,1);
 }
 
 .top_list .section .top ul .top_module .top_line{
@@ -544,9 +571,23 @@ img {
     float: left;
 }
 
-.mv_list ul li img{
+.mv_list ul li .pic{
+    display: inline-block;
     height: 126.65px;
     width: 225.15px;
+    overflow: hidden;
+}
+
+.mv_list ul li  a img{
+    height: 126.65px;
+    width: 225.15px;
+    transition: all .3s;  /* 过渡效果 */
+}
+
+.mv_list ul li a img:hover{
+    transform: scale(1.1); /* 鼠标移入的时候变大一点点，超出边框的部分隐藏掉 */
+    /*transform： 应用于元素的2D或3D转换。 旋转：rotate（）、缩放：scale（）、移动：translate（）、倾斜：skew（）*/
+    /*animate：动画效果。*/
 }
 
 .mv_list .mv_info h3{
