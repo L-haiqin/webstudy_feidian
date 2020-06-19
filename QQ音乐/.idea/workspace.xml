@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b02d7e3-b7e1-4e29-b130-4653ed5004e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/focus/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/focus/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/focus/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/focus/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/recommendSong/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/recommendSong/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/recommendSong/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/recommendSong/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/recommendSong/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/animate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/focus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="1b02d7e3-b7e1-4e29-b130-4653ed5004e8" name="Default Changelist" comment="轮播图" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -32,7 +15,7 @@
     <session id="-1675364620">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.30" value="3" />
@@ -69,6 +52,7 @@
           <entry key="css" value="5208" />
           <entry key="html" value="3184" />
           <entry key="js" value="2438" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -76,6 +60,7 @@
           <entry key="CSS" value="5208" />
           <entry key="HTML" value="3184" />
           <entry key="JavaScript" value="2438" />
+          <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -145,7 +130,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
+            <state relative-caret-position="2575">
               <caret line="420" column="18" selection-start-line="420" selection-start-column="18" selection-end-line="420" selection-end-column="18" />
             </state>
           </provider>
@@ -242,8 +227,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="371" />
-    <option name="y" value="67" />
+    <option name="x" value="86" />
+    <option name="y" value="34" />
     <option name="width" value="841" />
     <option name="height" value="618" />
   </component>
@@ -261,11 +246,6 @@
               <item name="QQ音乐" type="b2602c69:ProjectViewProjectNode" />
               <item name="QQ音乐" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="QQ音乐" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QQ音乐" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -279,6 +259,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -327,17 +308,32 @@
       <workItem from="1592301600470" duration="8325000" />
       <workItem from="1592402498056" duration="5132000" />
       <workItem from="1592445866477" duration="21839000" />
-      <workItem from="1592533127050" duration="10634000" />
+      <workItem from="1592533127050" duration="11613000" />
     </task>
+    <task id="LOCAL-00001" summary="轮播图">
+      <created>1592553599274</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592553599274</updated>
+    </task>
+    <task id="LOCAL-00002" summary="轮播图">
+      <created>1592554024685</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592554024686</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134125000" />
+    <option name="totallyTimeSpent" value="135104000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="371" y="67" width="841" height="618" extended-state="0" />
+    <frame x="86" y="34" width="841" height="618" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24776785" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24657534" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -350,7 +346,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32897604" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -361,6 +357,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="轮播图" />
+    <option name="LAST_COMMIT_MESSAGE" value="轮播图" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/logo.png">
@@ -491,7 +491,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
+        <state relative-caret-position="2575">
           <caret line="420" column="18" selection-start-line="420" selection-start-column="18" selection-end-line="420" selection-end-column="18" />
         </state>
       </provider>
