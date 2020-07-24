@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>可可爱爱管理系统</title>
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+    <!--域名后+"/favicon.ico"即可出现所需站点的ico图标-->
+    <link rel="stylesheet" type="text/css" href="../public/style/basic.css"/>
+    <link rel="stylesheet" type="text/css" href="../public/style/index.css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 1349px;
+            font-family: poppin,Tahoma,Arial,微软雅黑,sans-serif;
+            background-image: url("../images/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;  /*使图片全屏展示*/
+            /*display: flex;*/
+            /*flex-direction: column;*/
+        }
+        .flex_center{
+            display: flex;
+            justify-content: center;  /*定义了项目在主轴上的对齐方式*/
+            align-items: center;  /*定义项目在交叉轴上如何对齐*/
+        }
+
+        .form_item_lable{
+            width: 70%;
+            height: 26%;
+            margin: 0 auto;
+        }
+
+        header{
+            width: 1349px;
+            height: 100px;
+        }
+
+        footer{
+            width: 1349px;
+            height: 100px;
+        }
+
+        content{
+            width: 1349px;
+            height: 400px;
+            /*flex: 1;*/
+        }
+
+        .sign{
+            width: 400px;
+            height: 300px;
+            border: 1.5px solid gray;
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction:column;  /*决定主轴的方向（即项目的排列方向）*/
+            /*justify-content:center;  !*定义了项目在主轴上的对齐方式*!*/
+        }
+
+        .sign .username{
+            flex: 1;
+            width: 278px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1.5px solid gray;
+            font-size: 17px;
+            text-indent: 1rem;  /*规定文本块中首行文本的缩进;  1rem等于html根元素设定的font-size的px值*/
+            /*outline: none;  !*绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用*!*/
+        }
+
+        .sign .number{
+            flex: 1;
+            width: 278px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1.5px solid gray;
+            font-size: 17px;
+            text-indent: 1rem;  /*规定文本块中首行文本的缩进;  1rem等于html根元素设定的font-size的px值*/
+        }
+        .sign button{
+            width: 278px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1.5px solid gray;
+            background-color: midnightblue;
+            font-size: 17px;
+            color: gray;
+            cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+            text-indent: 1rem;  /*规定文本块中首行文本的缩进;  1rem等于html根元素设定的font-size的px值*/
+        }
+        .sign button:hover{
+            background-color: darkblue;
+        }
+
+        .sign .code{
+            height: 38px;
+            width: 100px;
+            border-radius: 5px;
+            border: 1.5px solid gray;
+            font-size: 17px;
+            text-indent: 1rem;
+        }
+
+        .sign .code_number{
+            width: 160px;
+            height: 40px;
+            background: #ddd;
+            margin-left: 15px;
+            font-size: 20px;
+            letter-spacing: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="name flex_center">
+        <p style="color: gray;margin-top: 40px;font-size: 38px;letter-spacing:10px">可可爱爱管理系统</p>
+        <!--letter-spacing设置字间距-->
+    </div>
+</header>
+
+<content class="flex_center">
+    <form class="sign" action="" method="post">
+        <div class="user_name flex_center form_item_lable">
+            <label>
+                <input type="text" class="username" placeholder="Username">
+            </label>
+        </div>
+        <div class="flex_center form_item_lable">
+            <label>
+                <input type="text" class="number" placeholder="Number">
+            </label>
+        </div>
+
+        <!--<div class="flex_center form_item_lable">-->
+            <!--<label>-->
+                <!--<input class="code" placeholder="Code">-->
+            <!--</label>-->
+            <!--<div class="code_number flex_center"></div>-->
+        <!--</div>-->
+
+        <button type="submit" class="flex_center form_item_lable">sign up</button>
+    </form>
+</content>
+
+<footer>
+    <div class="made flex_center">
+        <p style="color: gray">made by lhq</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+content{
+    width: 1349px;
+    height: 400px;
+    /*flex: 1;*/
+}
+
+.sign{
+    width: 400px;
+    height: 300px;
+    border: 1.5px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction:column;  /*决定主轴的方向（即项目的排列方向）*/
+    /*justify-content:center;  !*定义了项目在主轴上的对齐方式*!*/
+}
+
+.sign .username{
+    flex: 1;
+    width: 278px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    font-size: 17px;
+    text-indent: 1rem;  /*规定文本块中首行文本的缩进;  1rem等于html根元素设定的font-size的px值*/
+    /*outline: none;  !*绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用*!*/
+}
+
+.sign .number{
+    flex: 1;
+    width: 278px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    font-size: 17px;
+    text-indent: 1rem;  /*规定文本块中首行文本的缩进;  1rem等于html根元素设定的font-size的px值*/
+}
+.sign button{
+    width: 278px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    background-color: midnightblue;
+    font-size: 17px;
+    color: gray;
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+    text-indent: 1rem;  /*规定文本块中首行文本的缩进;  1rem等于html根元素设定的font-size的px值*/
+}
+.sign button:hover{
+    background-color: darkblue;
+}
+
+.sign .code{
+    height: 38px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    font-size: 17px;
+    text-indent: 1rem;
+}
+
+.sign .code_number{
+    width: 160px;
+    height: 40px;
+    background: #ddd;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}

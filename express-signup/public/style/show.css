@@ -1,0 +1,23 @@
+content{
+    width: 1349px;
+    height: 400px;
+    /*flex: 1;*/
+}
+
+li{
+    list-style: none;
+}
+
+.show ul{
+    /*width: 600px;*/
+    height: 40px;
+}
+.show li{
+    width: 600px;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: gray;
+    border: 1.5px solid gray;
+    background-color: white;
+}

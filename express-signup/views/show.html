@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>可可爱爱管理系统</title>
+    <link rel="stylesheet" href="../public/style/basic.css"/>
+    <link rel="stylesheet" href="../public/style/show.css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 1349px;
+            font-family: poppin,Tahoma,Arial,微软雅黑,sans-serif;
+            background-image: url("../images/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;  /*使图片全屏展示*/
+            /*display: flex;*/
+            /*flex-direction: column;*/
+        }
+        .flex_center{
+            display: flex;
+            justify-content: center;  /*定义了项目在主轴上的对齐方式*/
+            align-items: center;  /*定义项目在交叉轴上如何对齐*/
+        }
+
+        .form_item_lable{
+            width: 70%;
+            height: 26%;
+            margin: 0 auto;
+        }
+
+        header{
+            width: 1349px;
+            height: 100px;
+        }
+
+        footer{
+            width: 1349px;
+            height: 100px;
+        }
+
+        content{
+            width: 1349px;
+            height: 400px;
+            /*flex: 1;*/
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .show ul{
+            /*width: 300px;*/
+            height: 40px;
+        }
+        .show li{
+            width: 400px;
+            /*flex: 1;*/
+            /*flex-wrap:wrap;*/
+            height: 40px;
+            text-align: center;
+            font-size: 22px;
+            color: gray;
+            border: 1.5px solid gray;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="name flex_center">
+        <p style="color: gray;margin-top: 40px;font-size: 38px;letter-spacing:10px">可可爱爱管理系统</p>
+        <!--letter-spacing设置字间距-->
+    </div>
+</header>
+
+<content class="flex_center">
+    <div class="show">
+        <!--<ul class="flex_center">-->
+            <!--<li style="color: midnightblue">姓名</li>-->
+            <!--<li style="color: midnightblue">学号</li>-->
+        <!--</ul>-->
+
+        <ul class="list">
+            {{each dataList}}
+            <li class="list_name flex_center">{{$value.name}} {{$value.number}}</li>
+            <!--<li class="list_number">{{$value.number}}</li>-->
+            {{/each}}
+        </ul>
+    </div>
+</content>
+
+<footer>
+    <div class="made flex_center">
+        <p style="color: gray">made by lhq</p>
+    </div>
+</footer>
+</body>
+</html>
