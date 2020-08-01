@@ -2,94 +2,52 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title>可可爱爱管理系统</title>
-    <link rel="stylesheet" href="../public/style/basic.css"/>
-    <link rel="stylesheet" href="../public/style/show.css"/>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
+    <title>正儿八经的四六级报名系统</title>
+    <link rel="stylesheet" href="/style/basic.css"/>
+    <link rel="stylesheet" href="/style/show.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap/dist/style/bootstrap.min.css" rel="stylesheet">
 
-        body{
-            width: 1349px;
-            font-family: poppin,Tahoma,Arial,微软雅黑,sans-serif;
-            background-image: url("../images/bg.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%;  /*使图片全屏展示*/
-            /*display: flex;*/
-            /*flex-direction: column;*/
-        }
-        .flex_center{
-            display: flex;
-            justify-content: center;  /*定义了项目在主轴上的对齐方式*/
-            align-items: center;  /*定义项目在交叉轴上如何对齐*/
-        }
-
-        .form_item_lable{
-            width: 70%;
-            height: 26%;
-            margin: 0 auto;
-        }
-
-        header{
-            width: 1349px;
-            height: 100px;
-        }
-
-        footer{
-            width: 1349px;
-            height: 100px;
-        }
-
-        content{
-            width: 1349px;
-            height: 400px;
-            /*flex: 1;*/
-        }
-
-        li{
-            list-style: none;
-        }
-
-        .show ul{
-            /*width: 300px;*/
-            height: 40px;
-        }
-        .show li{
-            width: 400px;
-            /*flex: 1;*/
-            /*flex-wrap:wrap;*/
-            height: 40px;
-            text-align: center;
-            font-size: 22px;
-            color: gray;
-            border: 1.5px solid gray;
-            background-color: white;
-        }
-    </style>
+    <!-- Custom styles for this template -->
+    <link href="/style/base.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <div class="name flex_center">
-        <p style="color: gray;margin-top: 40px;font-size: 38px;letter-spacing:10px">可可爱爱管理系统</p>
+        <p style="color: gray;margin-top: 40px;font-size: 38px;letter-spacing:10px">欢迎来到四六级考试报名系统</p>
         <!--letter-spacing设置字间距-->
     </div>
 </header>
 
 <content class="flex_center">
-    <div class="show">
-        <!--<ul class="flex_center">-->
-            <!--<li style="color: midnightblue">姓名</li>-->
-            <!--<li style="color: midnightblue">学号</li>-->
-        <!--</ul>-->
-
-        <ul class="list">
-            {{each dataList}}
-            <li class="list_name flex_center">{{$value.name}} {{$value.number}}</li>
-            <!--<li class="list_number">{{$value.number}}</li>-->
-            {{/each}}
-        </ul>
+    <div class="show flex_center">
+        <!--<a class="btn-sign" href="/">继续报名</a>-->
+            <div class="table-responsive">
+                <a class="btn-sign" href="/">继续报名</a>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>编号</th>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{ each students }}
+                    <tr>
+                        <td>{{ $value.id }}</td>
+                        <td>{{ $value.name}}</td>
+                        <td>{{ $value.number}}</td>
+                        <td>
+                            <a href="/edit?id={{ $value.id }}">修改</a>
+                            <a href="/delete?id={{ $value.id }}">删除</a>
+                        </td>
+                    </tr>
+                    {{ /each }}
+                    </tbody>
+                </table>
+            </div>
     </div>
 </content>
 
