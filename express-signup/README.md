@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
-6. 安装mongoose
+6. 安装mongoose（启动MongoDB服务后，才可以使用数据库进行增删查改）
 npm install mongoose
 
 API官方文档：https://mongoosejs.com/docs/api/model.html#model_Model.findById
