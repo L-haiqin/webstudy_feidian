@@ -36,12 +36,13 @@
                     <tbody>
                     {{ each students }}
                     <tr>
-                        <td>{{ $value.id }}</td>
+                        <!--<td>{{ $value.id }}</td>-->
+                        <td>{{ $index+1 }}</td>
                         <td>{{ $value.name}}</td>
                         <td>{{ $value.number}}</td>
                         <td>
-                            <a href="/edit?id={{ $value.id }}">修改</a>
-                            <a href="/delete?id={{ $value.id }}">删除</a>
+                            <a href="/edit?id={{ $value._id }}">修改</a>
+                            <a href="/delete?id={{ $value._id }}">删除</a>
                         </td>
                     </tr>
                     {{ /each }}

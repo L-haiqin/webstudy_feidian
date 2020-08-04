@@ -11,32 +11,25 @@
 <body>
 <header>
     <div class="name flex_center">
-        <p style="color: gray;margin-top: 40px;font-size: 38px;letter-spacing:10px">欢迎来到四六级考试报名系统</p>
+        <p style="color: gray;margin-top: 40px;font-size: 38px;letter-spacing:10px">请修改信息</p>
         <!--letter-spacing设置字间距-->
     </div>
 </header>
 
 <content class="flex_center">
-    <form class="sign" action="/" method="post">
+    <form class="sign" action="/edit" method="post">
+        <input type="hidden" name="id" value="{{ student._id }}">
         <div class="user_name flex_center form_item_lable">
             <label>
-                <input type="text" class="username" name="name" placeholder="Username">
+                <input type="text" class="username" name="name" value="{{ student.name }}" placeholder="Username">
             </label>
         </div>
         <div class="flex_center form_item_lable">
             <label>
-                <input type="text" class="number" name="number" placeholder="Number">
+                <input type="text" class="number" name="number" value="{{ student.number }}" placeholder="Number">
             </label>
         </div>
-
-        <!--<div class="flex_center form_item_lable">-->
-            <!--<label>-->
-                <!--<input class="code" placeholder="Code">-->
-            <!--</label>-->
-            <!--<div class="code_number flex_center"></div>-->
-        <!--</div>-->
-
-        <button type="submit" class="flex_center form_item_lable">sign up</button>
+        <button type="submit" class="flex_center form_item_lable">确认修改</button>
     </form>
 </content>
 
